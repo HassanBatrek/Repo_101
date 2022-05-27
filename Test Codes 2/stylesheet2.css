@@ -1,0 +1,367 @@
+*{
+    text-decoration: none;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    background-color: rgb(25, 25, 25);
+    margin-left: 248px;
+    margin-top: 8.49px;
+    margin-right: 248px;
+    overflow-y: auto;
+}
+
+header svg{
+    width: 160px;
+    margin-right: 1px;
+    cursor:pointer;
+}
+
+.logo-m{
+    fill: rgba(127, 217, 240, 0.897);
+}
+
+header{
+    display:flex;
+}
+
+.uol{
+    align-items: center;
+    margin-right:auto;
+    display: flex;
+    justify-items: flex-start;
+    list-style: none;
+    font-family: Helvetica;
+    font-weight: 500;
+    justify-items: space-between;
+}
+
+.uol a{
+    text-decoration: none;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.uol a button{
+    color: rgb(207, 207, 207);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: transparent;
+    padding: 10px 10px;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.uol a button:hover{
+    color: rgb(255, 117, 129);
+    background-color: rgba(255, 56, 73, 0.377)
+}
+
+.unol{
+    align-items: center;
+    display: flex;
+    justify-items: flex-end;
+    list-style: none;
+    font-family: Helvetica;
+    font-weight: 500;
+    justify-items: space-between;
+}
+
+.btn2{
+    display: flex;
+    justify-items: center;
+    padding: 7px 5px;
+    border-style: none;
+    border-radius:3px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn2:hover{
+    background-color: rgba(255, 255, 255, 0.349);
+}
+.btn2 .btntxt, .btnicon{
+    display:inline-flex;
+    align-items: center;
+    margin-right: 3px;
+}
+
+.btnicon{
+    color: rgb(207, 207, 207);
+    font-size: 18px;
+}
+
+.btntxt{
+    color:rgb(207, 207, 207);
+    font-weight: bold;
+}
+
+input {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+    border-style: solid;
+    background-color: transparent;
+    border-color: rgb(160, 160, 160);
+    border-width: 1px;
+    padding: 6px 6px;
+    color: rgb(207, 207, 207);
+    width: 60px;
+    font-size: 16px;
+  }
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+  :-moz-placeholder {
+    text-align: center;
+  }
+
+input:active{
+    border-color:rgb(255, 117, 129);
+}
+
+.pop{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:rgb(207, 207, 207);
+    padding: 6px 6px;
+}
+
+.btn3{
+    background-color: rgb(245, 245, 245);
+    color: rgb(26, 26, 26);
+    border-style: none;
+    border-radius: 5px;
+    padding: 9px 17.5px;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.btn3:hover{
+    background-color: rgb(192, 192, 192);
+}
+
+.sp{
+    font-size:19px;
+    display:block;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    color:white;
+
+}
+.side{
+    display: flex;
+    position:fixed;
+    height: 100%;
+    width: 285px;
+    background-color: rgb(25, 25, 25);
+    overflow-x: hidden; 
+    z-index: 1;
+    float: left;
+    top: 0;
+    margin-top:115px;
+    overflow-y: auto;
+}
+
+.sul{
+    list-style: none;
+    color: rgb(204, 204, 204);
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    flex-direction: column;
+    padding:0%;
+}
+
+.sul li span{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: block;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.suol{
+    list-style: none;
+    color: rgb(204, 204, 204);
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    flex-direction: column;
+    padding:0%;
+}
+
+.suol li a {
+    margin-bottom: 15px;
+    display: block;
+    font-weight: normal;
+    font-size: 90%;
+}
+
+.sul li span:hover{
+    text-decoration: underline;
+}
+
+.bar{
+    width: 100%;
+    display:flex;
+    background-color: rgb(71, 71, 71);
+    height: 30px;
+    border-top-color:rgb(160, 160, 160);
+    border-bottom-color:rgb(160, 160, 160);
+    border-left-color:rgb(25, 25, 25);
+    border-right-color: rgb(25, 25, 25);
+    border-style: solid;
+    border: auto;
+    left:0;
+    right:0;
+    position:fixed;
+    border-width: 1px;
+}
+
+.bul{
+    align-items: center;
+    margin-right:auto;
+    display: flex;
+    list-style: none;
+    font-family: Helvetica;
+    font-weight: 500;
+    margin-top:10px;
+    margin-left:248px;
+    padding: 0;
+
+}
+
+.bul li span{
+    color: rgb(204, 204, 204);
+    display:flex;
+    margin-top:5px;
+    cursor:pointer;
+}
+
+.bul li span:hover{
+    text-decoration: underline;
+}
+.bul li span ion-icon{
+    width:12px;
+    padding: 0px 10px;
+}
+
+.btn4{
+    width: 110px;
+    height: 28px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-right:248px;
+    display: flex;
+    justify-items: center;
+    padding: 7px 5px;
+    border-style: none;
+    border-radius:3px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn4:hover{
+    background-color: rgba(255, 255, 255, 0.349);
+}
+
+.btn4txt, .btn4icon{
+    display:inline-flex;
+    align-items: center;
+    margin-right: 3px;
+    margin-top:0px;
+}
+
+.btn4icon{
+    color: rgb(207, 207, 207);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn4txt{
+    color:rgb(207, 207, 207);
+    font-weight: bold;
+}
+
+.main{
+    display:flex;
+    align-items: left;
+    margin-left: 340px;
+    flex-direction: column;
+    margin-top:50px;
+    width:840px;
+}
+
+h1{
+    color:white;
+    font-family: arial;
+    font-size:40px;
+}
+
+.sndbar{
+    display:flex;
+    justify-items:flex-end;
+}
+
+.btn5, .btn6{
+    background-color: rgba(160, 160, 160, 0.507);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(150, 150, 150);
+    border-width: 1px;
+    color:rgba(127, 217, 240, 0.897);;
+    font-weight: bold;
+    margin-bottom:20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.btn5{
+    margin-right:530px;
+    padding: 7px;
+}
+
+.btn6{
+    margin-left:auto;
+    padding: 7px;
+}
+
+.btn5:hover, .btn6:hover{
+    text-decoration: none;
+    background-color: rgb(150, 150, 150);
+}
+code{
+    background-color: rgb(59, 59, 59);
+    color:rgba(127, 217, 240, 0.897);
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 17px;
+}
+
+code:hover{
+    text-decoration: none;
+}
+
+.main a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    display:block;
+    line-height: 30px;
+}
+
+.css{
+    color:rgba(127, 217, 240, 0.897);
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 17px;
+}
+
+.css:hover{
+    text-decoration: none;
+}
