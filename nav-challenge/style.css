@@ -211,11 +211,12 @@ header {
         height: auto;
         justify-content: space-between;
         align-items: center;
+        position: relative;
     }
-
     .row {
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
     }
 
     .hero__text {
