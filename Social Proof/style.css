@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+svg{
+    width: 10px;
+}
+
+:root{
+    --clr-vdm:hsl(300, 42%, 28%);
+    --clr-sp:hsl(333, 80%, 67%);
+
+    --clr-dgm:hsl(303, 10%, 53%);
+    --clr-lgm:hsl(300, 24%, 96%);
+    --clr-white:hsl(0, 0%, 100%);
+
+    --ff-primary:"League Spartan";  
+}
+
+body{
+    background-image: url(/bg-pattern-top-mobile.svg), url(/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+    margin: 0;
+    font-family: var(--ff-primary);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main{
+    padding: 4em 0;
+}
+
+h1{
+    color:var(--clr-vdm);
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 0.9em;
+}
+
+.topleft p{
+    text-align: center;
+    color:var(--clr-dgm);
+    margin-top: 1.3em;
+}
+
+.rating{
+    width: 100%;
+    background-color: var(--clr-lgm);
+    border-radius: 7px;
+    padding: 0.1em 1em;
+    margin: 0 auto;
+    margin-bottom: 0.8em;
+}
+
+.ratingul{
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    padding-top: 1em;
+}
+
+.ratingli + .ratingli{
+    margin-left: 0.4em;
+}
+
+.ratingli svg{
+    fill: #e79b0fd2;
+    width: 17px;
+}
+
+.rating p{
+    margin-top: 0.5em;
+    text-align: center;
+    font-weight: 700;
+    color: var(--clr-vdm);
+    font-size: 1em;
+}
+
+.top{
+    margin-bottom: 3em;
+}
+
+.bottom img{
+    border-radius: 50px;
+    width: 2.6rem;
+}
+
+.box{
+    background-color: var(--clr-vdm);
+    border-radius: 7px;
+    padding: 2em;
+    margin-bottom: 1em;
+}
+
+.boxtop{
+    display: flex;
+    align-items: center;
+}
+
+.boxtop h4{
+    color:var(--clr-white);
+    margin: 0;
+}
+
+.boxtop p{
+    color: var(--clr-sp);
+    margin: 0;
+}
+
+.boxtoptxt{
+    margin-left: 1.2em;
+}
+
+.boxbottom p{
+    color: white;
+    margin-bottom: 0;
+}
+
+@media (min-width: 1440px) {
+    body{
+    background-image: url(/bg-pattern-top-desktop.svg), url(/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom 0px right 0px;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top{
+        padding: 1em 0;
+    }
+    .topleft{
+        width: 80%;
+    }
+
+    .topleft h1, .topleft p{
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .topleft h1{
+        margin-bottom: 0.6em;
+        font-size: 3.763888vw;
+    }
+
+    .topleft p{
+        font-size: 1.3em;
+        width: 70%
+    }
+
+    .topright{
+        width: 80%;
+        align-self: center;
+    }
+
+    .rating{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1vw 2.3vw;
+        width: 70vw;
+        max-width: 520px;
+    }
+
+    .ratingul{
+        padding: 0;
+        margin: 0;
+    }
+
+    .rating p{
+        margin-block: 0;
+        margin-left: 1.8em;
+        text-align: left;
+        width: 18vw;
+        max-width: 259.2px;
+    }
+
+    .ratingli + .ratingli{
+        margin-left: 0.89em;
+    }
+
+    .rone{
+        margin-left: 6em;
+    }
+    .rtwo{
+        margin-left: 8em;
+    }
+
+    .rthree{
+        margin-left: 10em;
+    }
+    
+    .rating + .rating{
+        margin-top: 1em;
+    }
+
+    .box + .box{
+        margin-left: 1.7em;
+    }
+
+    .btwo{
+        margin-top: 1.3em;
+    }
+    
+    .bthree{
+        margin-top: 2.6em;
+    }
+
+    .bottom .row{
+        height: 20vw;
+    }
+
+    .box{
+        height: 12.5vw;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boxtoptxt{
+        font-size: 0.8vw;
+    }
+
+    .box img{
+        width: 2vw;
+    }
+
+    .boxbottom p{
+        font-size: 1vw;
+    }
+}
+
+@media (min-width: 1700px){
+    .rating{
+        max-width: 490px;
+    }
+}
