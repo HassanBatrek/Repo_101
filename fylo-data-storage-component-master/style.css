@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+:root{
+    --clr-pb:hsl(243, 100%, 93%);
+    --clr-gb:hsl(229, 7%, 55%);
+    --clr-db:hsl(228, 56%, 26%);
+    --clr-vdb:hsl(229, 57%, 11%);
+
+    --ff-rale:"Raleway"
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 4rem 0;
+    background-image: url(https://hassanbatrek.github.io/Repo_101/fylo-data-storage-component-master/images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.left{
+    background-color: var(--clr-db);
+    padding: 2.5em;
+    border-radius:  8px 100px 8px 8px;
+    box-shadow: 0 8px 100px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.lefttop{
+    margin-bottom: 1.5em;
+}
+
+.leftbottom{
+    display:flex;
+}
+
+.doc, .folder, .upload{
+    background-color: var(--clr-vdb);
+    border-radius: 8px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+}
+
+.doc{
+    padding: 0.8em 0.9em;
+}
+
+.folder, .upload{
+    padding: 0.8em;
+}
+
+.doc:hover, .folder:hover, .upload:hover{
+    background-color:hsl(0, 0%, 100%);
+}
+
+.img{
+    width: 100%;
+}
+
+.leftbottom div + div{
+    margin-left: 0.8em;
+}
+
+
+.right{
+    background-color: var(--clr-db);
+    padding: 2em;
+    margin-top: 1em;
+    border-radius: 8px;
+    box-shadow: 0 8px 100px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.progress p{
+    color: white;
+    font-family: var(--ff-rale);
+    font-size: 0.75em;
+    text-align: center;
+    width: 90%;
+    margin: 1em auto;
+}
+
+.progress p a{
+    font-weight: 700;
+}
+
+.bar{
+    width: 100%;
+    height: 1.1em;
+    position: relative;
+    border-radius: 1em;
+    border-style: solid;
+    border-color: var(--clr-vdb);
+    border-width: 2px;
+    background-color: var(--clr-vdb);
+    margin-bottom: 0.7em;
+}
+
+.bar::before{
+    content: attr(data-label);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0.01em;
+    top: 0.01em;
+    bottom: 0.01em;
+    width: 75%;
+    border-radius: 1em;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+.data{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-family: var(--ff-rale);
+    margin-bottom: 1em;
+}
+
+.data a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.6em;
+    font-weight: 700;
+}
+
+.popupmobile{
+    background-color: white;
+    box-shadow: 0 8px 100px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    padding: 1em 0.5em;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 7px;
+    margin-top: -33.5px;
+    font-family: var(--ff-rale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupmobile h1{
+    margin: 0;
+    margin-right: 0.3em;
+}
+
+.popupmobile a{
+    color: grey;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.6em;
+}
+
+@media (min-width: 1000px) {
+    body{
+        background: url(https://hassanbatrek.github.io/Repo_101/fylo-data-storage-component-master/images/bg-desktop.png);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: var(--clr-vdb);
+    }
+
+    .child{
+        display: flex;
+        justify-content: center;
+    }
+
+    .popupmobile{
+        display: none;
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+        padding: 0;
+        margin: 0;
+    }
+
+     .left{
+        width: 32%;
+    }
+
+    .right{
+        margin-left: 2em;
+        width: 50%;
+        align-self: flex-end;
+    }
+
+    .progress p{
+        text-align: left;
+        width: 100%;
+    }
+
+    .box{
+        background-color: white;
+        padding: 0.6em 1em;
+        position: fixed;
+        margin-left: 20%;
+        margin-top: -6%;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        font-family: var(--ff-rale);
+        transition: color 0.2s ease-in;
+    }
+
+    .box h1{
+        margin: 0;
+        margin-right: 0.3em;
+    }
+    
+    .box a{
+        color: grey;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.6em;
+    }
+
+    .triangle{
+        width: 0;
+        height: 0;
+        border-left: 30px solid transparent;
+        border-top: 30px solid white;
+        position: fixed;
+        margin-left: 30.3%;
+        margin-top: -1%;
+    }
+
+    .box:hover{
+        color: var(--clr-db);
+    }
+
+}
+
+@media (min-width: 1100px) {
+    .triangle{
+        margin-left: 32.3%;
+        margin-top: -2%;
+    }
+
+    .box{
+        margin-left: 23%
+    }
+}
+@media (min-width: 1300px) {
+    .triangle{
+        margin-left: 33.95%;
+        margin-top: -2.5%;
+    }
+
+    .box{
+        margin-left: 26%
+    }
+}
+
+@media (min-width: 1400px) {
+    .triangle{
+        margin-left: 30.95%;
+        margin-top: -1%;
+    }
+
+    .box{
+        margin-left: 23.8%;
+        margin-top: -4.3%;
+    }
+}
+
+@media (min-width: 1920px) {
+    body{
+        margin-top: 320px;
+    } 
+    .triangle{
+        margin-left: 23.6%;
+        margin-top: -0.9%;
+    }
+
+    .box{
+        margin-left: 18.22%;
+        margin-top: -3.3%;
+    }
+}
