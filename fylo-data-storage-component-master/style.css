@@ -135,6 +135,11 @@ body{
     font-weight: 700;
 }
 
+.popup a, h1{
+    display: none;
+    visibility: hidden;
+}
+
 .popupmobile{
     background-color: white;
     box-shadow: 0 8px 100px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
