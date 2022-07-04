@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root{
+    --clr-dc: hsl(158, 36%, 37%);
+    --clr-c:  hsl(30, 38%, 92%);
+
+    --clr-vdb: hsl(212, 21%, 14%);
+    --clr-dgb: hsl(228, 12%, 48%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    --ff-mont: "Montserrat";
+    --ff-fraunces: "Fraunces";    
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: var(--clr-c);
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.cont{
+    position: absolute;
+
+}
+
+.conta{
+    background-color: white;
+    border-radius: 17px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 1.5em;
+}
+
+.mobile{
+    border-radius: 17px 17px 0px 0px;
+    width: 100%;
+    visibility: visible;
+}
+
+.dt{
+    visibility: hidden;
+    display: none;
+}
+.container{
+    width: 87%;
+    margin: 0 auto;
+}
+
+.per{
+    display:inline-block;
+    margin-top: 1em;
+    font-family: var(--ff-mont);
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-size: 0.9em;
+    color:grey;
+    font-weight: 500;
+}
+
+.container h1{
+    font-family: var(--ff-fraunces);
+    margin-block: 0.4em;
+    color: var(--clr-vdb);
+}
+
+.container p{
+    font-family: var(--ff-mont);
+    color: grey;
+    margin-bottom: 3em;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pricee .row {
+    justify-content: left;
+}
+.price h1{
+    color: var(--clr-dc);
+}
+
+.price a{
+    color: var(--clr-dc);
+    font-family: var(--ff-mont);
+    margin-left: 1.5em;
+    text-decoration: line-through;
+}
+
+.btn{
+    background-color: var(--clr-dc);
+    border-radius: 7px;
+    color: var(--clr-white);
+    font-family: var(--ff-mont);
+    font-weight: 700;
+    font-size: 0.8em;
+    height: 45px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.btn img{
+    width: 20px;
+    margin-right: 1em;
+}
+
+.btn:hover{
+    background-color: hsl(158, 36%, 32%);
+}
+
+
+@media (min-width:700px) {
+    .conta{
+        display:flex;
+        flex-direction: row;
+        width: 40vw;
+    }
+    .container{
+        width: 50%;
+    }
+    .dt{
+        border-radius: 17px 0 0 17px;
+        visibility: visible;
+        display: block;
+        width: 50%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .mobile{
+        visibility: hidden;
+        display: none;
+    }
+    .cont{
+
+    }
+    .container{
+        margin: 2em;
+    }
+
+    .container h1{
+        width: 90%;
+        font-size: 2.5em;
+        line-height: 1.1em;
+    }
+
+    .container p{
+        line-height: 1.8em;
+        font-size: 1em;
+        margin-bottom: 2em;
+    }
+
+    .price{
+        margin-bottom: 2em;
+    }
+
+    .pricee .row{
+        justify-content: left   ;
+    }
+
+    .price a{
+        margin-left: 0;
+    }
+
+    .price h1{
+        width: auto;
+        margin-right: 1em;
+    }
+
+    .btn{
+        padding: 2.2em 0;
+    }
+    
+    .conta{
+        padding: 0;
+    }
+}
