@@ -135,7 +135,12 @@ body{
     font-weight: 700;
 }
 
-.popup a, h1{
+.box a{
+    display: none;
+    visibility: hidden;
+}
+
+.box h1{
     display: none;
     visibility: hidden;
 }
