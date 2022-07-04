@@ -172,6 +172,10 @@ body{
 }
 
 @media (min-width: 1000px) {
+    .box h1, .box a{
+        display: block;
+        visibility:visible;
+    }
     body{
         background: url(https://hassanbatrek.github.io/Repo_101/fylo-data-storage-component-master/images/bg-desktop.png);
         background-position: bottom right;
