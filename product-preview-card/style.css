@@ -120,7 +120,8 @@ body{
     .conta{
         display:flex;
         flex-direction: row;
-        width: 40vw;
+        width: 100%;
+        max-width: 815px;
     }
     .container{
         width: 50%;
