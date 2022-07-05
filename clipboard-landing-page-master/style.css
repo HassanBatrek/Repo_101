@@ -27,7 +27,7 @@ body{
 }
 
 .hero{
-    background:url(./clipboard-landing-page-master/images/bg-header-mobile.png);
+    background:url(./images/bg-header-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
@@ -271,7 +271,7 @@ li a:hover{
     }
 
     .hero{
-        background:url(./clipboard-landing-page-master/images/bg-header-desktop.png);
+        background:url(./images/bg-header-desktop.png);
         background-repeat: no-repeat;
         background-position: top right;
     }
