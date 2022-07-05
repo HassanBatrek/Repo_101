@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![]([./screenshot.jpg](https://hassanbatrek.github.io/Repo_101/clipboard-landing-page-master/Screenshot_7.png))
+![]([./screenshot.jpg](https://hassanbatrek.github.io/Repo_101/clipboard-landing-page-master/Screenshot_7.png)
 
 ### Links
 
