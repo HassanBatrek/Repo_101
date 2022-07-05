@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+    --clr-sc: hsl(171, 66%, 44%);
+    --clr-lb: hsl(233, 100%, 69%);
+
+    --clr-dgb:hsl(210, 10%, 33%);
+    --clr-gb: hsl(201, 11%, 66%);
+
+    --ff-bai: "Bai Jamjuree";
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: var(--ff-bai);
+}
+
+.container{
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hero{
+    background:url(/clipboard-landing-page-master/images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+}
+
+.logo img{
+    margin-top: 7em;
+    width: 40%;
+    margin-bottom: 3.5em;
+    max-width: 100%;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.herotxt{
+    font-family: var(--ff-bai);
+    text-align: center;
+}
+
+.herotxt p{
+    font-size: 1.2em;
+    color:var(--clr-gb);
+    line-height: 1.6em;
+    margin-bottom: 3em;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    padding: 1.3rem 1rem;
+    border-radius: 50em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: var(--ff-bai);
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in;
+}
+
+.btn__green{
+    background-color: var(--clr-sc);
+    box-shadow: -1px 2px 20px 0px rgba(38,186,164,0.37);
+}
+
+.btn__blue{
+    margin-top: 1.5em;
+    background-color: var(--clr-lb);
+    box-shadow: 0px 2px 10px 0px hsl(233, 30%, 69%);
+}
+
+.mid{
+    margin-top: 10em;
+    text-align: center;
+}
+
+
+.midtxt p{
+    font-size: 1.2em;
+    color:var(--clr-gb);
+    line-height: 1.6em;
+    margin-bottom: 3em;
+}
+
+.mid img{
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.midbottomtxt p{
+    font-size: 1.2em;
+    color:var(--clr-gb);
+    line-height: 1.6em;
+    margin-bottom: 3em;
+}
+
+.midtwo img{
+    width: 100%;
+}
+
+.midtwo{
+    padding: 5em 0;
+}
+
+h2{
+    font-size: 2em;
+    color: var(--clr-dgb);
+    text-align: center;
+}
+
+h1{
+    font-size: 2.3em;
+    color: var(--clr-dgb);
+    text-align: center;
+}
+
+h3{
+    font-size: 1.5em;
+    color: var(--clr-dgb);
+    text-align: center;
+}
+
+p{
+    font-size: 1.2em;
+    color:var(--clr-gb);
+    line-height: 1.6em;
+    text-align: center;
+}
+
+.midthreetxt p{
+    margin-bottom: 4em;
+}
+
+.midthreeft .one, .midthreeft .two,.midthreeft .three{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.midthreeft img{
+    margin-block-start: 2em;
+    width: 4em;
+}
+
+.midthree{
+    margin-bottom: 5em;
+}
+
+.midfour img + img{
+    margin-top: 7em;
+}
+
+.midfour img{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.midfive{
+    margin-block: 10em;
+}
+
+.logofoot{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.logofoot img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+footer{
+    background-color: rgb(245, 244, 244);
+    padding: 3.5em 0;
+}
+
+footer .row{
+    align-items: center;
+}
+
+.navlist li{
+    list-style: none;
+    text-align: center;
+}
+
+.navlist ul{
+    padding: 0;
+    margin: 0;
+}
+
+.navlist li a{
+    font-size: 1.5em;
+    font-family: var(--ff-bai);
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+    margin-top: 1.5em;
+    display: block;
+    transition: color 0.2s ease-in;
+}
+
+footer .socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.socials img + img{
+    margin-left: 2em;
+}
+
+.btn:hover{
+    opacity: 90%;
+}
+
+.btn:active{
+    opacity: 80%;
+}
+
+li a:hover{
+    color:var(--clr-sc);
+}
+
+@media (min-width: 1440px) {
+    h2{
+        font-size: 2em;
+        color: var(--clr-dgb);
+        text-align: center;
+    }
+    
+    h1{
+        font-size: 2.3em;
+        color: var(--clr-dgb);
+        text-align: center;
+    }
+    
+    h3{
+        font-size: 1.5em;
+        color: var(--clr-dgb);
+        text-align: center;
+    }
+    
+    p{
+        font-size: 1.2em;
+        color:var(--clr-gb);
+        line-height: 1.6em;
+        text-align: center;
+    }
+
+    .hero .logo{
+        width: 35%;
+        margin: 0 auto;
+    }
+
+    .hero{
+        background:url(/clipboard-landing-page-master/images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+    
+    .hero .logo img{
+        margin-bottom: 1.8em;
+        margin-top: 9em;
+    }
+    
+    .herotxt h1{
+        margin-bottom:0;
+    }
+
+    .herotxt p{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 1em;
+        margin-bottom: 2.5em;
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn{
+        padding: 1.3rem 4rem;
+    }
+    
+    .btn + .btn{
+        margin-left: 1em;
+    }
+    
+    .btn__blue{
+        margin-top: auto;
+    }
+    
+    .mid{
+        margin-top: 10em;
+        text-align: center;
+    }
+    
+    .midtxt{
+        margin-bottom: 4em;
+    }
+    
+    .mid img{
+        width: 700px;
+    }
+
+    .midbottomtxt p, .midbottomtxt h3{
+        text-align: left;
+    }
+    
+    .midbottomtxt{
+        margin-left: 6em;
+        margin-top: 6em;
+    }
+
+    .midbottomimg{
+        margin-left: -13em;
+    }
+
+    .midtwo img{
+        width: 100%;
+    }
+    
+    .midtwo{
+        padding: 2em 0;
+    }
+
+    .midtwotxt{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 6em;
+    }
+    
+    .midtwoimg img{
+        width: 900px;
+    }
+
+    .midtwoimg{
+        display: flex;
+        justify-content: center;
+    }
+
+    .midthree .row{
+        align-items: flex-start;
+    }
+    
+    .midthreeft .one, .midthreeft .two,.midthreeft .three{
+        flex-basis: 100%;
+    }
+    
+    .midthree .three img{
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .midfour{
+        padding-block: 4em;
+    }
+
+    .midfour img + img{
+        margin-top: initial;
+        margin-left: 4.5em;
+    }
+    
+    .midfour .row{
+        align-items: center;
+    }
+
+    .midfive{
+        margin-block: 10em;
+    }
+    
+    .logofoot{
+        margin: initial;
+        display: flex;
+        justify-content: left;
+    }
+    
+    footer{
+        background-color: rgb(245, 244, 244);
+        padding: 1.8em 0;
+    }
+    
+    footer .row{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav{
+        display:flex;
+        width: 100%;
+        margin-left: 8em;
+    }
+
+    .navlist li{
+        text-align: left;
+    }
+    
+    .navlist li a{
+        font-size: 1em;
+        margin-top: initial;
+    }
+
+    .navlist li + li{
+        margin-top: 0.7em;
+    }
+    
+    footer .socials{
+        margin-top: initial;
+    }
+    
+    .navlist{
+        align-self: center;
+    }
+    
+    .navlist + .navlist{
+        margin-left: 7em;
+    }
+
+    nav .three{
+        align-self: flex-start;
+    }
+}
