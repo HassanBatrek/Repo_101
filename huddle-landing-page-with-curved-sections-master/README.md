@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/HassanBatrek/Repo_101/gh-pages/huddle-landing-page-with-curved-sections-master)
-- Live Site URL: [Add live site URL here](https://hassanbatrek.github.io/Repo_101/huddle-landing-page-with-curved-sections-master/)
+- Solution URL: [https://github.com/HassanBatrek/Repo_101/gh-pages/huddle-landing-page-with-curved-sections-master](https://github.com/HassanBatrek/Repo_101/gh-pages/huddle-landing-page-with-curved-sections-master)
+- Live Site URL: [https://hassanbatrek.github.io/Repo_101/huddle-landing-page-with-curved-sections-master/](https://hassanbatrek.github.io/Repo_101/huddle-landing-page-with-curved-sections-master/)
 
 ## My process
 
